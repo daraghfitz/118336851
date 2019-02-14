@@ -12,7 +12,7 @@
     var p = x + y * 12;
     var b = y * 12 ;
     
-    if (document.getElementById('basicprogram').checked) {
+    if (document.getElementById('basicProgram').checked) {
         //Basic Package is checked
         document.Calculator.Total.VAlue = b;
         
@@ -23,6 +23,27 @@
         }
 </script>
 </head>
+
+<body>
+    
+    <!--Opening a HTML form-->
+    <form name="calculator">
+     <!--User fills out form here--> 
+     <br />
+     <input type="radio" name="programType" id="basicProgram" value="Basic"/>Basic
+     <input type="radio" name="programType" id="proProgram" value="Pro"/>Pro
+     
+     <!--Here the result will be displayed-->  
+     <br />
+     Your total price: <input type="text" name ="total">
+     
+     <input type="button" value="Submit" onclick="javascript:packageTotal()">
+     
+    </form>
+</body>
+</html>
+     
+</body>
 </html>
 
 
