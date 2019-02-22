@@ -1,3 +1,5 @@
+/* global $ */
+
 function calcSub(parm1){
     
     var argSubTotal; 
@@ -10,22 +12,23 @@ function calcSub(parm1){
 }
   if(document.getElementById('immersivexp').checked){
     argSubTotal=3000;
+        
 }
    
-     CalDisVatTotal(argSubTotal);
+     calcDisVatTotal(argSubTotal);
 }
 
-function CalDisVatTotal(parmSubTotal){
+function calcDisVatTotal(parmSubTotal){
     var SubTotal = parmSubTotal;
-    var VatAmt;
-    var DiscountAmt;
+    var VatAmnt;
+    var DiscountAmnt;
     var TotalPrice;
     
-    DiscountAmt = (parmSubTotal * 0.05);
-    VatAmt = (parmSubTotal - DiscountAmt) * (.10);
-    TotalPrice = (parmSubTotal + VatAmt - DiscountAmt);
+    DiscountAmnt = (parmSubTotal * 0.1);
+    VatAmnt = (parmSubTotal - DiscountAmnt) * (.20);
+    TotalPrice = (parmSubTotal + VatAmnt - DiscountAmnt);
     
-    display(SubTotal, VatAmt, DiscountAmt, TotalPrice);
+    display(SubTotal, VatAmnt, DiscountAmnt, TotalPrice);
 }
 
 function display(parm1 , parm2 , parm3 , parm4){
