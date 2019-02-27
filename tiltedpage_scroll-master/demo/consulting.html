@@ -1,7 +1,7 @@
 <!DOCTYPE html
 <html>
     <head>
-        <title>Consulting Services</title>
+        <title>Consulting Services - Cloud9</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -15,7 +15,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #008CBA;
 }
 
 .topnav a {
@@ -33,29 +33,111 @@ body {
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #008CBA;
   color: white;
 }
+
+div#section1 img {
+    border-radius : 50%;
+    width : 10%
+}
+
+div#section2 img{
+    border-radius : 50%
+        width : 10%
+}
+
+div#wrapperHeader{
+    width: 98%;
+    height: 250px;
+    background: ("imgs/cloud9.jpg") repeat-x 0 0;
+    text-align: center;
+}
+
+div#wrapperHeader div#header{
+    width: 1000px;
+        height: 2500px;
+        margin:0 auto;
+}
+
+div#wrapperHeader div#header img{
+    width: 98%;
+        height: 250px;
+        margin:0 auto;
+}
+
+button {
+    background-color : #008CBA;
+    color : white;
+    border : #00ffff;
+    border-style : solid;
+    border-width : 5;
+    text-align : center;
+    padding : 18px; 32px
+}
         </style>
+    </head>
+    
         
     <body>
         <div class="topnav">
-  <a class="active" href="http://localhost:8000/menupage.html">Home</a>
-  <a href="http://localhost:8000/EBus/ebus1.php">Shop</a>
+  <a class="home" href="http://localhost:8000/menupage.html">Home</a>
+  <a class="shop" href="http://localhost:8000/EBus/ebus1.php">Shop</a>
+  <a class="github" href="https://github.com/daraghfitz/118336851">Github</a>
+  <a class="heroku" href="https://dashboard.heroku.com/apps/project118336851">Heroku</a>
 </div>
-
-<div style="padding-left:16px">
-  <h1>Consulting Services</h2>
-  <p><h3>Blockchain</h3>
-  <h3>Autonomous Things</h3>
-  <h3>Immersive Experience</h3>
-  
-  
-  
-  </p>
-</div>
-        
-  <br>           
- </body>
+    <center>
+        <div id="wrapperHeader">
+            <div id="header">
+                <img src="imgs/cloud9.jpg">
+            </div>  
+        </div>
+    </center>
+  <div id="section1">
+      <center>
+      <img src="imgs/blockchain.png" border="5">
+      <h2>Blockchain</h2>
+      <p>The Blockchain was created to enable the first viable digital currency, known as Bitcoin. The idea was to have a decentralized currency that did not rely on banks or other financial institutions for its integrity or legitimacy.
+          <br>
+          The Block Chain is a distributed database of transactions powered by public-key cryptography. The core concept that makes it different from centralized banks is that all transactions, and in fact all of the currency itself, is stored in a public ledger that is kept by all participants in the system.
+          <br>
+          Here at Cloud 9 we will offer you professional consulting on how to manipulate bitcoin stocks and how to use blockchain for cryptocurrency investing for maximum profit.
+      </p>  
+      <br>
+      <div id="section2">
+          <img src="imgs/autonomousthings.jpg" border="5">
+          <h2>Autonomous Things</h2>
+          <p>Autonomous things, abbreviated AuT, is the universal term for the technological advancements that are expected to bring computers into the physical environment as autonomous entities without human guidance, independently moving and interacting with humans and/or objects and also completing tasks.
+              <br>
+              Self navigating drones are being test run at the moment by Amazon that aim to deliver parcels to customers. The drones automatically pick up the delivery address from the database and self-navigate themselves to the destination.
+              <br>
+              Tesla are also mass-producing self-driving cars every day. Up to 400,000 Teslas are hoped to be produced to deploy to Europe in 2019 and London City Council have proposed an idea that by 2021 there will be a fully operating self service taxi system in the city.
+              <br>
+              If your company needs consulting in relation to reaping the rewards of autonomous technologies, visit our store or contact us to get started.             
+          </p>
+      </div>
+      <br>
+      <div id="section3">
+          <img src="imgs/immersivexp.png" border="5">
+          <h2>Immersive Experience</h2>
+          <p>An immersive experience is an illusory environment that completely surrounds you such that you feel that you are inside it and part of it. The term is associated with technology environments that command the senses such as virtual reality and mixed reality.            
+              <br>
+              Some examples of immersive experience include art visualisation, virtual reality gaming and entertainment, education and science.
+              <br>
+              One such example of immersive experience in science is that NASA use virtual reality to train their astronauts in a space-like environment using virtual reality technology.
+              <br>
+              If immersive experiences are in your line of industry, Cloud 9 can offer you fully professional help on how to integrate these technologies into your company for employee or customer use.
+          </p>
+          <br>
+          <div id="shop-link">
+       <button onclick="location.href='http://localhost:8000/EBus/ebus1.php'" type="button">
+         Our Products</button>           
+          </div>
+      </div>
+    </center> 
+   
+  </body>
+           
+ 
         
 </html>

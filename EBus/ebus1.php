@@ -29,8 +29,9 @@ $_SESSION['txtTotal'] = $totalValue;
   <body>
   <!-- here i am putting the prices on the radio buttons-->
  <div id="purchase">
-            <h4>Our Products:</h4>
-            
+     <center>
+     <h4>Our Products:</h4>
+     </center>  
             <br/>
             
             <form method="POST" action="Ebus1.php">
@@ -102,13 +103,14 @@ $_SESSION['txtTotal'] = $totalValue;
               </div>
               <!--adding buttons-->
                 <center>
-              <button type="submit" id="btnProceed">Add to Cart</button>
+                   <button onclick="location.href='http://localhost:8000/EBus/ebus2.php'" type="button">
+         Add To Cart</button>
                 </center>
             </form>
             
             <br>
             <center>
-            <a role="button" href="Ebus1.php">Clear</a>
+            <button onclick="location.href='ebus1.php'" type="button">Clear</button>
             </center>
             <br/>
             <center>
