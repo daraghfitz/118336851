@@ -16,7 +16,7 @@ $_SESSION['txtTotal'] = $totalValue;
     
       <!--here i am separating the header from rest of text-->
       <div class="one">
-  <a href="http://localhost:8000/menupage.html">Home Menu</a>
+  <a href="../index.php">Home Menu</a>
        </div>
       <hr>
     </head>
@@ -34,7 +34,7 @@ $_SESSION['txtTotal'] = $totalValue;
      </center>  
             <br/>
             
-            <form method="POST" action="Ebus2.php">
+            <form method="post" action="Ebus2.php">
               
                 <center>
               <label for="blockchain">

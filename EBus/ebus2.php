@@ -4,7 +4,7 @@ $fullNameValue = "";
 $totalValue2 = "";
 $phoneNumber = "";
       
-$totalValue = $_POST['txtTotal'];
+@$totalValue = @$_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
 $_SESSION['txtTotal'] = $totalValue2;
 $_SESSION['txtNumber'] = $phoneNumber;
