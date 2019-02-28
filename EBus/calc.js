@@ -35,10 +35,10 @@ function display(parm1 , parm2 , parm3 , parm4){
     
 
     
-    document.getElementById("SubTotal").value= parm1;
-    document.getElementById("VAT").value= parm2;
-    document.getElementById("Discount").value = parm3;
-    document.getElementById("total").value = parm4;
+    document.getElementById("txtSubTotal").value= parm1;
+    document.getElementById("txtVAT").value= parm2;
+    document.getElementById("txtDiscount").value = parm3;
+    document.getElementById("txtTotal").value = parm4;
     
     
     enablebtnProceed();

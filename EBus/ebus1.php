@@ -34,7 +34,7 @@ $_SESSION['txtTotal'] = $totalValue;
      </center>  
             <br/>
             
-            <form method="POST" action="Ebus1.php">
+            <form method="POST" action="Ebus2.php">
               
                 <center>
               <label for="blockchain">
@@ -67,7 +67,7 @@ $_SESSION['txtTotal'] = $totalValue;
              <center
               <label for="SubTotal">
                 Sub Total
-                <input type="text" id="SubTotal" value="0.00" readonly/>
+                <input type="text" id="txtSubTotal" name="txtSubTotal" value="0.00" readonly/>
               </label>
             </center>
              
@@ -77,7 +77,7 @@ $_SESSION['txtTotal'] = $totalValue;
               <center>
               <label for="Discount">
                 Discount(10%)
-                <input type="text" id="Discount" value="0.00" readonly/>
+                <input type="text" id="txtDiscount" name="txtDiscount" value="0.00" readonly/>
               </label>
               </center>
                <br/>
@@ -86,7 +86,7 @@ $_SESSION['txtTotal'] = $totalValue;
               <center>
                 <label for="VAT">
                 VAT(20%)
-                <input type="text" id="VAT" value="0.00" readonly/>
+                <input type="text" id="txtVAT" name="txtVAT" value="0.00" readonly/>
               </label>
                   <center> 
                 <br/>
@@ -95,7 +95,7 @@ $_SESSION['txtTotal'] = $totalValue;
               <center>
               <label for="total">
                 Total
-                <input type="text" id="total" name="total" value="0.00" readonly/>
+                <input type="text" id="txtTotal" name="txtTotal" value="0.00" readonly/>
               </label>
               </center>
               

@@ -6,9 +6,13 @@
 <?php
 
 session_start();
-$totalValue = $_POST['txtTotal'];
-
-echo "The total value is ".$totalValue.".";
+$totalValue2 = $_POST['txtTotal'];
+$fullNameValue = $_POST['txtName'];
+echo "Name: ".$fullNameValue.".";
+echo '<br>';
+echo "Phone Number: ".$phoneNumber.".";
+echo '<br>';
+echo "Total: ".$totalValue2.".";
 ?>
 
 </body>
