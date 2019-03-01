@@ -18,6 +18,7 @@ $_SESSION['txtTotal'] = $totalValue;
                 border: #0056b3;
                 border-style: solid;
                 padding: 18px 32px;
+                color: white;
             }
             
             #btnClear {
@@ -26,6 +27,7 @@ $_SESSION['txtTotal'] = $totalValue;
                 border: #FF201E;
                 border-style: solid;
                 padding: 18px 32px;
+                color: white;
             }
             
             #btnCart {
@@ -34,6 +36,7 @@ $_SESSION['txtTotal'] = $totalValue;
                 border: #1c7430;
                 border-style: solid;
                 padding: 18px 32px;
+                color: white;
             }
             
             label{
@@ -47,112 +50,112 @@ $_SESSION['txtTotal'] = $totalValue;
             h2{
                 font-family: 'arial', sans serif
             }
+            
+            body {
+                background-color: #e0a800
+            }
         </style>
     
     
-      <!--here i am separating the header from rest of text-->
-      <div class="one">
-  <a href="../index.php">Home Menu</a>
-       </div>
-      <hr>
+ <!DOCTYPE html>
+<html>
+    <head>
+      
+        <meta charset="UTF-8">
+        <title>Select Product</title> 
+        <script type="text/javascript" src="calc.js"></script>
     </head>
-        
+    
+    <body>
+      <!--dividing the header from rest of text-->
+      <div class="one">
+  <a href="../index.php">Homepage</a>
+  <a href="../tiltedpage_scroll-master/demo/consulting.html">About Us </a>
+  <hr>
+  </div>
   </br>
-  </br>
-  </br>
-  </br>
-  
-  <body>
-  <!-- here i am putting the prices on the radio buttons-->
+  <!--putting the prices on the radio buttons-->
  <div id="purchase">
-     <center>
-     <h2>Our Products:</h2>
-     </center>  
+        <center>
+            <h2>Our Products:</h2>
             <br/>
             
             <form method="post" action="Ebus2.php">
               
-                <center>
               <label for="blockchain">
                 <input type="radio" id="blockchain" name="product" checked onClick="disablebtnProceed()"/>
-                Blockchain @ $1000
+               Blockchain
               </label>
-                </center>
-                
+              
               <br/>
               
-              <center>
               <label for="autonomousthings">
                 <input type="radio" id="autonomousthings" name="product" onClick="disablebtnProceed()"/>
-                Autonomous Things @ $2000
+                Autonomous Things
               </label>
-              </center>
               
               <br/>
               
-              <center>
                 <label for="immersivexp">
                 <input type="radio" id="immersivexp" name="product" checked onClick="disablebtnProceed()"/>
-                Immersive Experience @ $3000
+                Immersive Experience
               </label>
-              </center>
-              
+             
+             </br>      
              </br>
              </br>
               
-             <center
               <label for="SubTotal">
                 Sub Total
-                <input type="text" id="txtSubTotal" name="txtSubTotal" value="0.00" readonly/>
+                <input type="text" id="txtSubTotal" value="0.00" readonly/>
               </label>
-            </center>
-             
+              
               <br/>
               <br/>
               
-              <center>
               <label for="Discount">
                 Discount(10%)
-                <input type="text" id="txtDiscount" name="txtDiscount" value="0.00" readonly/>
+                <input type="text" id="txtDiscount" value="0.00" readonly/>
               </label>
-              </center>
+              
                <br/>
               <br/>
               
-              <center>
                 <label for="VAT">
                 VAT(20%)
-                <input type="text" id="txtVAT" name="txtVAT" value="0.00" readonly/>
+                <input type="text" id="txtVAT" value="0.00" readonly/>
               </label>
-                  <center> 
+              
                 <br/>
               <br/>
               
-              <center>
+              
               <label for="total">
                 Total
-                <input type="text" id="txtTotal" name="txtTotal" value="0.00" readonly/>
+                <input type="text" id="txtTotal" name=txtTtotal" value="0.00" readonly/>
               </label>
-              </center>
-              
+            </center>
               <br/>
               </div>
-  
-              <center>
-              <!--adding buttons-->                 
-                   <button onclick="location.href='../EBus/ebus2.php'" id="btnCart" type="button">
-                    Add To Cart</button>  
-              </center>
-               <br>    
-               <center> 
-            <button onclick="location.href='ebus1.php'" id="btnClear" type="button">Clear</button>
-               </center>
+                </form>
+
+              <!--adding buttons-->
+            <center>
+              <button type="submit" id="btnCart" onclick="location.href='Ebus2.php'">Add to Cart</button>   
+            </center>
+                   
+            <br>
+            <br>
+          
+            <center>
+            <button id='btnClear' onclick= "location.href='Ebus1.php'">Clear</a>
+            </center>
+            <br>
             <br/>
             <center>
             <button id="btnCalculate" onClick="calcSub()">Calculate Cost</button>
             </center>
-            </form>
-            </body>
-    
-    
+            <br>
+        
+    </body>
 </html>

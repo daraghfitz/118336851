@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <style>
             body {
-                background-color:lightskyblue;
+                background-color:#007bff;
             }
             
             h1   {
