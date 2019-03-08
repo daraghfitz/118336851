@@ -76,7 +76,7 @@ $_SESSION['txtNumber'] = $phoneNumber;
         <center>
             <label for="phone">Phone Number</label>
             <br>
-            <input type="text" name="txtNumber" id="txtNumber" required class="calculator-input" onkeypress="return event.charCode >= 48 && event.charCode <= 57" size="40" maxlength="10">
+            <input type="text" name="txtNumber" value="<?php echo $phoneNumber;?>" id="txtNumber" required class="calculator-input" onkeypress="return event.charCode >= 48 && event.charCode <= 57" size="40" maxlength="10">
         </center>
     </div>
     <br>
