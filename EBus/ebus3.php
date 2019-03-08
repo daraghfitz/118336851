@@ -10,31 +10,37 @@
                 color: #00B0FF;
             }
             
-            h1 {
+            header {
                 text-align: center;
                 font-family: 'arial', sans-serif;
-                font-size: xx-large;
+                font-size: large;
                 font-weight: bold;
                 color: #00B0FF;
             }
         </style>
-        <title>Receipt</title>
+        <title>Receipt</title>      
     </head>
     
 <body>
-    <header>
+<center>
+    <header>       
         <h1>Receipt</h1>
         <hr>
     </header>
+</center>
            <div id="container">
             <!--//Starting the session to get the variable from last page-->
 <?php
 session_start();
 @$totalValue2 = @$_POST['txtTotal'];
 @$fullNameValue = @$_POST['txtName'];
-echo "Name: ".$fullNameValue.".";
+$phoneNumber = @$_POST['txtNum'];
+echo "Name: ".$fullNameValue;
 echo "<br>";
-echo "Total: ".$totalValue2.".";
+echo "Phone Number:".@$phoneNumber;
+echo "<br>";
+echo "Total: ".$totalValue2;
+
 ?>
 </div>
 </body>

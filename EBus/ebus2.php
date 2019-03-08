@@ -2,10 +2,12 @@
 session_start();
 $fullNameValue = "";
 $totalValue2 = "";
+$phoneNumber = "";
       
 @$totalValue = @$_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
 $_SESSION['txtTotal'] = $totalValue2;
+$_SESSION['txtNumber'] = $phoneNumber;
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +38,20 @@ $_SESSION['txtTotal'] = $totalValue2;
     }
     
     hr {
-        color: black
+        color: black;
+        height: 10px;
+        border: none;
+        background-color: black;
     }
     
+    h3 {
+        text-align: center;
+        font-size: xx-large;
+        font-family: 'arial', sans-serif;
+        
+    }
+    
+ 
 </style>
 </head>
 
@@ -63,7 +76,7 @@ $_SESSION['txtTotal'] = $totalValue2;
         <center>
             <label for="phone">Phone Number</label>
             <br>
-            <input type="text" name="txtNumber" id="txtNumber" size="40" maxlength='15'> 
+            <input type="text" name="txtNumber" id="txtNumber" class="calculator-input" onkeypress="return event.charCode >= 48 && event.charCode <= 57" size="40" maxlength="15">
         </center>
     </div>
     <br>
@@ -71,7 +84,7 @@ $_SESSION['txtTotal'] = $totalValue2;
         <center>
             <label for="pin">PIN</label>
             <br>
-            <input type="text" name="txtPin" id="txtPin" size="40" maxlength="4">
+            <input type="password" name="txtPin" value= "" required id="txtPin" size="40" maxlength="4">
         </center>
     </div>
     <br>
