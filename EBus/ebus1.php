@@ -141,14 +141,14 @@ $_SESSION['txtTotal'] = $totalValue;
 
               <!--adding buttons-->
             <center>
-              <button type="submit" id="btnCart" onclick="location.href='Ebus2.php'">Add to Cart</button>   
+              <button type="submit" id="btnCart" onclick="location.href='ebus2.php'">Add to Cart</button>   
             </center>
                    
             <br>
             <br>
           
             <center>
-            <button id='btnClear' onclick= "location.href='Ebus1.php'">Clear</a>
+            <button id='btnClear' onclick= "location.href='ebus1.php'">Clear</a>
             </center>
             <br>
             <br/>
