@@ -49,7 +49,7 @@ and open the template in the editor.
         <h1><a href= "tiltedpage_scroll-master/demo/tiltedpage_scroll_demo.html">Interests</a></h1>
         <h1><a href= "tiltedpage_scroll-master/demo/consulting.html">Consultancy Services</a></h1>
         <h1><a href= "EBus/ebus1.php">E-Business Shop</a></h1>
-        <h1><a href="https://dashboard.heroku.com/apps/project118336851">Heroku</a></h1>
+        <h1><a href="https://project118336851.herokuapp.com">Heroku</a></h1>
         <h1><a href="https://github.com/daraghfitz/118336851">Github</a></h1>
     </center>
     </body>

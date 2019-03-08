@@ -26,8 +26,8 @@
         <h1>Receipt</h1>
         <hr>
     </header>
-<!--//Starting the session to get the variable from last page-->
-<div id="container">
+           <div id="container">
+            <!--//Starting the session to get the variable from last page-->
 <?php
 session_start();
 @$totalValue2 = @$_POST['txtTotal'];
@@ -37,6 +37,5 @@ echo "<br>";
 echo "Total: ".$totalValue2.".";
 ?>
 </div>
-
 </body>
 </html>
