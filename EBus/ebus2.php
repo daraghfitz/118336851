@@ -41,7 +41,7 @@ $_SESSION['txtNumber'] = $phoneNumber;
         color: black;
         height: 10px;
         border: none;
-        background-color: black;
+        background-color: white;
     }
     
     h3 {
@@ -68,7 +68,7 @@ $_SESSION['txtNumber'] = $phoneNumber;
     <center>
         <label for="fullname">Full Name</label>
         <br>
-        <input type="text" name="txtName" id="txtName" size="40" maxlength="25">
+        <input type="text" name="txtName" required id="txtName" size="40" maxlength="25">
     </center>
 </div>
     <br>
@@ -76,7 +76,7 @@ $_SESSION['txtNumber'] = $phoneNumber;
         <center>
             <label for="phone">Phone Number</label>
             <br>
-            <input type="text" name="txtNumber" id="txtNumber" class="calculator-input" onkeypress="return event.charCode >= 48 && event.charCode <= 57" size="40" maxlength="15">
+            <input type="text" name="txtNumber" id="txtNumber" required class="calculator-input" onkeypress="return event.charCode >= 48 && event.charCode <= 57" size="40" maxlength="10">
         </center>
     </div>
     <br>
@@ -87,10 +87,14 @@ $_SESSION['txtNumber'] = $phoneNumber;
             <input type="password" name="txtPin" value= "" required id="txtPin" size="40" maxlength="4">
         </center>
     </div>
+     <center>
+            <br>
+            <input type="hidden" name="txtTotal" value="<?php echo $totalValue;?>"/>
+        </center>
     <br>
     <div id="submit-button">
         <center>
-        <button onclick="location.href='ebus3.php'" type="button" id='btnSubmit'>
+        <button onclick="" type="submit" id='btnSubmit'>
          Submit Details</button>
         </center>
     </div>

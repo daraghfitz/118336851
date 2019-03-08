@@ -80,7 +80,7 @@ $_SESSION['txtTotal'] = $totalValue;
             <h2>Our Products:</h2>
             <br/>
             
-            <form method="post" action="Ebus2.php">
+            <form method="post" action="ebus2.php">
               
               <label for="blockchain">
                 <input type="radio" id="blockchain" name="product" checked onClick="disablebtnProceed()"/>
@@ -141,14 +141,14 @@ $_SESSION['txtTotal'] = $totalValue;
 
               <!--adding buttons-->
             <center>
-              <button type="submit" id="btnCart" onclick="location.href='ebus2.php'">Add to Cart</button>   
+                <button type="submit" id="btnCart" name="btnCart" onclick="location.href='ebus2.php'">Add to Cart</button>
             </center>
                    
             <br>
             <br>
           
             <center>
-            <button id='btnClear' onclick= "location.href='ebus1.php'">Clear</a>
+            <button id='btnClear' onclick="location.href='ebus1.php'">Clear</a>
             </center>
             <br>
             <br/>

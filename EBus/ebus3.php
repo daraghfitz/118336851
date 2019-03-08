@@ -29,17 +29,18 @@
     </header>
 </center>
            <div id="container">
-            <!--//Starting the session to get the variable from last page-->
+               <!--For some reason my php variables wouldn't carry over from each page although my code seems to be correct-->
+               <!--//Starting the session to get the variable from last page-->
 <?php
 session_start();
 @$totalValue2 = @$_POST['txtTotal'];
 @$fullNameValue = @$_POST['txtName'];
 $phoneNumber = @$_POST['txtNum'];
-echo "Name: ".$fullNameValue;
+echo "Name: ".$fullNameValue.".";
 echo "<br>";
-echo "Phone Number:".@$phoneNumber;
+echo "Phone Number:".$phoneNumber.".";
 echo "<br>";
-echo "Total: ".$totalValue2;
+echo "Total: ".$totalValue2.".";
 
 ?>
 </div>
