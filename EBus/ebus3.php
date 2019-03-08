@@ -5,7 +5,17 @@
         <style>
             #container {
                 text-align: center;
-                font-family: 'arial', sans-serif;               
+                font-family: 'arial', sans-serif;  
+                font-size: x-large;
+                color: #00B0FF;
+            }
+            
+            h1 {
+                text-align: center;
+                font-family: 'arial', sans-serif;
+                font-size: xx-large;
+                font-weight: bold;
+                color: #00B0FF;
             }
         </style>
         <title>Receipt</title>
