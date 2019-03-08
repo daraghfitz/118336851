@@ -8,16 +8,30 @@ and open the template in the editor.
     <head>
         <style>
             body {
-                background-color:#007bff;
+                background-color:#007bff;               
             }
             
             h1   {
                 font-family : 'Arial', sans-serif;
                 font-weight : bold;
-                color :#FFF;                               
+                color : #FFF;                               
+            }
+            
+            header {
+                font-size: xx-large;
+            }
+            
+            a {
+                color: #FFF;
+            }
+            
+            hr {
+                color: #FFF;
+                height: 10px;
+                border: none;
+                background-color:#FFF;
             }
                 
-            
         </style>
         <title>Main Menu</title>
         <meta charset="UTF-8">
